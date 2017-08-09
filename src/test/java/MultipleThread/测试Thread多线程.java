@@ -2,6 +2,8 @@ package MultipleThread;
 
 import MultipleThread.threads.ThreadA;
 import MultipleThread.threads.ThreadB;
+import MultipleThread.threads.Machine;
+import MultipleThread.threads.Worker;
 import junit.framework.TestCase;
 
 /**
@@ -16,7 +18,6 @@ public class 测试Thread多线程 extends TestCase{
         a.start();
         b.start();
         b.join();
-        a.interrupt();
         System.out.println("等待线程结束");
     }
 }
